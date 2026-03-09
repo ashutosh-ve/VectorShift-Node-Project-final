@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# allow local frontend to call endpoints
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3002"],
@@ -25,7 +25,6 @@ async def parse_pipeline(request: Request):
     num_nodes = len(nodes)
     num_edges = len(edges)
 
-    # build adjacency list
     adj = {node['id']: [] for node in nodes}
     for e in edges:
         src = e.get('source')
@@ -33,7 +32,7 @@ async def parse_pipeline(request: Request):
         if src in adj:
             adj[src].append(tgt)
 
-    # detect cycle with DFS
+  
     visited = set()
     recstack = set()
     is_dag = True
