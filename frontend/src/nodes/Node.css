@@ -1,0 +1,42 @@
+.node-container {
+  min-width: 150px;
+  background: #fefefe;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.node-header {
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: center;
+  color: #222;
+}
+
+.node-body {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+
+.react-flow__handle {
+  background: #555;
+}
+
+
+.node-header {
+  background-color: #aabde4;
+  padding: 10px 12px;
+  border-radius: 6px 6px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
